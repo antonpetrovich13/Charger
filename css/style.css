@@ -253,9 +253,16 @@ body {
   .header__phone-one {
     -webkit-box-flex: 1;
     -ms-flex: 1 0 272px;
-    flex: 1 0 272px; }
+    flex: 1 0 272px;
+    -webkit-transition: all 0.7s ease-out 0s;
+    -o-transition: all 0.7s ease-out 0s;
+    transition: all 0.7s ease-out 0s; }
     .header__phone-one img {
       max-width: 100%; }
+    .header__phone-one:hover {
+      -webkit-transform: translate(-10%, -3%);
+      -ms-transform: translate(-10%, -3%);
+      transform: translate(-10%, -3%); }
   .header__phone-two {
     -webkit-box-flex: 1;
     -ms-flex: 1 0 272px;
@@ -441,7 +448,17 @@ body {
     -webkit-transform: translate(0, 50px);
     -ms-transform: translate(0, 50px);
     transform: translate(0, 50px);
-    margin: 0px 9px 0px 0px; }
+    margin: 0px 9px 0px 0px;
+    -webkit-animation-name: phone-one;
+    animation-name: phone-one;
+    -webkit-animation-duration: 1.7s;
+    animation-duration: 1.7s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate; }
     .subheader__phone-one img {
       max-width: 100%; }
   .subheader__phone-two {
@@ -451,9 +468,51 @@ body {
     -webkit-transform: translate(0, -50px);
     -ms-transform: translate(0, -50px);
     transform: translate(0, -50px);
-    margin: 0px 0px 0px 9px; }
+    margin: 0px 0px 0px 9px;
+    -webkit-animation-name: phone-two;
+    animation-name: phone-two;
+    -webkit-animation-duration: 1.7s;
+    animation-duration: 1.7s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate; }
     .subheader__phone-two img {
       max-width: 100%; }
+
+@-webkit-keyframes phone-one {
+  0% {
+    -webkit-transform: translate(0, 50px);
+    transform: translate(0, 50px); }
+  100% {
+    -webkit-transform: translate(0, 70px);
+    transform: translate(0, 70px); } }
+
+@keyframes phone-one {
+  0% {
+    -webkit-transform: translate(0, 50px);
+    transform: translate(0, 50px); }
+  100% {
+    -webkit-transform: translate(0, 70px);
+    transform: translate(0, 70px); } }
+
+@-webkit-keyframes phone-two {
+  0% {
+    -webkit-transform: translate(0, -50px);
+    transform: translate(0, -50px); }
+  100% {
+    -webkit-transform: translate(0, -70px);
+    transform: translate(0, -70px); } }
+
+@keyframes phone-two {
+  0% {
+    -webkit-transform: translate(0, -50px);
+    transform: translate(0, -50px); }
+  100% {
+    -webkit-transform: translate(0, -70px);
+    transform: translate(0, -70px); } }
   .subheader__body {
     max-width: 380px; }
   .subheader__row {
@@ -541,6 +600,34 @@ body {
         -webkit-transform: translate(-80px, 40px);
         -ms-transform: translate(-80px, 40px);
         transform: translate(-80px, 40px); }
+    @-webkit-keyframes phone-one {
+      0% {
+        -webkit-transform: translate(45px, 0);
+        transform: translate(45px, 0); }
+      100% {
+        -webkit-transform: translate(55px, 0);
+        transform: translate(55px, 0); } }
+    @keyframes phone-one {
+      0% {
+        -webkit-transform: translate(45px, 0);
+        transform: translate(45px, 0); }
+      100% {
+        -webkit-transform: translate(55px, 0);
+        transform: translate(55px, 0); } }
+    @-webkit-keyframes phone-two {
+      0% {
+        -webkit-transform: translate(-80px, 40px);
+        transform: translate(-80px, 40px); }
+      100% {
+        -webkit-transform: translate(-80px, 50px);
+        transform: translate(-80px, 50px); } }
+    @keyframes phone-two {
+      0% {
+        -webkit-transform: translate(-80px, 40px);
+        transform: translate(-80px, 40px); }
+      100% {
+        -webkit-transform: translate(-80px, 50px);
+        transform: translate(-80px, 50px); } }
       .subheader__item {
         padding: 0 9px 0 0; }
       .subheader__title {
