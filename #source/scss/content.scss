@@ -360,6 +360,7 @@
 	}
 	&__img {
 		flex: 0 1 295px;
+		cursor: pointer;
 		& img {
 			max-width: 100%;
 		}
@@ -441,6 +442,7 @@
 	&__slider {
 		margin: 52px 0px 0px 0px;
 		position: relative;
+		cursor: pointer;
 	}
 
 	&__slider .slick-dots {
@@ -493,4 +495,168 @@
 			line-height: 30px;
 		}
 	}
+}
+
+// <RUNNING> ===================================================================
+
+.running {
+	background: url("../img/running/bg.jpg") 0 0 no-repeat;
+	background-size: cover;
+	padding: 70px 0px 0 0px;
+	position: relative;
+	&__wrapper {
+		display: flex;
+	}
+
+	&__column {
+		flex: 0 1 50%;
+		&_2 {
+		}
+	}
+
+	&__top {
+		display: flex;
+		align-items: center;
+	}
+
+	&__image {
+	}
+
+	&__label {
+		margin: 0px 0px 0px 28px;
+		font-family: MyriadPro;
+		font-size: 36px;
+		font-weight: 600;
+		color: #ffffff;
+	}
+
+	&__sublabel {
+		margin: 20px 0px 32px 0px;
+		font-family: HelveticaNeue;
+		font-size: 16px;
+		line-height: 24px;
+		color: #000000;
+		max-width: 450px;
+	}
+
+	&__list {
+	}
+
+	&__line {
+		margin: 20px 0px;
+		display: flex;
+		align-items: center;
+	}
+
+	&__img {
+	}
+
+	&__text {
+		margin: 0px 0px 0px 24px;
+		max-width: 300px;
+		font-family: MyriadPro;
+		font-size: 22px;
+		line-height: 26px;
+		font-weight: 600;
+		color: #ffffff;
+	}
+
+	&__row {
+		display: flex;
+	}
+	&__item {
+		margin: 0px 9px;
+		position: relative;
+		cursor: pointer;
+		transition: all 0.5s ease 0s;
+		&_1 {
+			bottom: -286px;
+			&:hover {
+				bottom: -266px;
+			}
+		}
+		&_2 {
+			bottom: -200px;
+			&:hover {
+				bottom: -180px;
+			}
+		}
+		&_3 {
+			bottom: -87px;
+			&:hover {
+				bottom: -67px;
+			}
+		}
+	}
+	&__form {
+	}
+}
+.running-form {
+	padding: 55px 0px 50px 0px;
+	position: relative;
+	background-color: #f0f0f0;
+	bottom: 0px;
+	&__wrapper {
+	}
+
+	&__main {
+		display: inline;
+	}
+
+	&__title {
+		font-family: MyriadPro;
+		font-size: 24px;
+		line-height: 24px;
+		font-weight: 600;
+		color: #000000;
+		margin: 0px 0px 19px 0px;
+	}
+
+	&__input {
+		width: 696px;
+		height: 48px;
+		background-color: #ffffff;
+		border: 2px solid #3cd072;
+		padding: 0px 15px;
+		transition: all 0.6s ease 0s;
+		&:focus {
+			border: 2px solid #000;
+		}
+		margin: 0px 24px 0px 0px;
+	}
+
+	&__button {
+		display: inline-block;
+		width: 216px;
+		font-family: MyriadPro;
+		font-size: 16px;
+		line-height: 24px;
+		font-weight: 600;
+		color: #3cd072;
+	}
+}
+
+.btn {
+	&_bl {
+		background-color: #000;
+		& span {
+			background-color: #3cd072;
+		}
+		&:hover p {
+			color: #000;
+		}
+	}
+}
+
+::-webkit-input-placeholder {
+	color: #3cd072;
+}
+::-moz-placeholder {
+	color: #3cd072;
+} /* Firefox 19+ */
+:-moz-placeholder {
+	color: #3cd072;
+} /* Firefox 18- */
+:-ms-input-placeholder {
+	color: #3cd072;
 }
