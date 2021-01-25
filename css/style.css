@@ -987,17 +987,17 @@ body {
     -o-transition: all 0.5s ease 0s;
     transition: all 0.5s ease 0s; }
     .running__item_1 {
-      bottom: -286px; }
+      bottom: -247px; }
       .running__item_1:hover {
-        bottom: -266px; }
+        bottom: -227px; }
     .running__item_2 {
-      bottom: -200px; }
+      bottom: -160px; }
       .running__item_2:hover {
-        bottom: -180px; }
+        bottom: -140px; }
     .running__item_3 {
-      bottom: -87px; }
+      bottom: -47px; }
       .running__item_3:hover {
-        bottom: -67px; }
+        bottom: -27px; }
 
 .running-form {
   padding: 55px 0px 50px 0px;
