@@ -733,18 +733,6 @@
 	}
 }
 
-.btn {
-	&_bl {
-		background-color: #000;
-		& span {
-			background-color: #3cd072;
-		}
-		&:hover p {
-			color: #000;
-		}
-	}
-}
-
 ::-webkit-input-placeholder {
 	color: #3cd072;
 }
@@ -756,4 +744,94 @@
 } /* Firefox 18- */
 :-ms-input-placeholder {
 	color: #3cd072;
+}
+
+// <WATCH> ===================================================================
+
+.watch {
+	padding: 75px 0px;
+	&__image {
+		text-align: center;
+	}
+
+	&__title {
+		margin: 28px 0px 16px 0px;
+		text-align: center;
+		font-family: MyriadPro;
+		font-size: 24px;
+		font-weight: 600;
+		color: #000000;
+	}
+
+	&__subtitle {
+		text-align: center;
+		font-family: MyriadPro;
+		font-size: 36px;
+		font-weight: 600;
+		color: #3cd072;
+	}
+
+	&__text {
+		max-width: 650px;
+		margin: 35px auto 0 auto;
+		text-align: center;
+		font-family: HelveticaNeue;
+		font-size: 16px;
+		line-height: 24px;
+		color: #000000;
+	}
+	&__watches {
+		margin: 60px 0px 80px 0px;
+		display: flex;
+		justify-content: center;
+	}
+	&__img {
+		flex: 0 1 407px;
+		& img {
+			width: 100%;
+		}
+	}
+	&__link {
+		width: 296px;
+		height: 48px;
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	@media (max-width: 960px) {
+		padding: 50px 0px;
+		&__img {
+			flex: 0 1 250px;
+		}
+	}
+	@media (max-width: 550px) {
+		padding: 30px 0px;
+		&__title {
+			font-size: 22px;
+			margin: 20px 0px 8px 0px;
+		}
+		&__subtitle {
+			font-size: 34px;
+		}
+		&__text {
+			font-size: 14px;
+			line-height: 22px;
+			margin: 27px 0px 0px 0px;
+		}
+		&__watches {
+			margin: 40px 0px 40px 0px;
+		}
+		&__img {
+			flex: 0 1 180px;
+		}
+	}
+	@media (max-width: 400px) {
+		&__watches {
+			margin: 30px 0px 30px 0px;
+		}
+		&__img {
+			flex: 0 1 140px;
+		}
+	}
 }
