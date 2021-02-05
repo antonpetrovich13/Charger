@@ -682,6 +682,9 @@
 		font-weight: 600;
 		color: #000000;
 		margin: 0px 0px 19px 0px;
+		&_bl {
+			color: #3cd072;
+		}
 	}
 
 	&__input {
@@ -693,6 +696,12 @@
 		transition: all 0.6s ease 0s;
 		&:focus {
 			border: 2px solid #000;
+		}
+		&_bl {
+			border: 2px solid #000;
+			&:focus {
+				border: 2px solid #3cd072;
+			}
 		}
 	}
 
@@ -730,6 +739,9 @@
 		&__title {
 			font-size: 22px;
 		}
+	}
+	&_bl {
+		background-color: #000;
 	}
 }
 
@@ -853,7 +865,7 @@
 // <TOP> ===================================================================
 
 .top {
-	padding: 20px 0px 95px 0px;
+	padding: 20px 0px 50px 0px;
 	&__title {
 		margin: 0px 0px 41px 0px;
 		font-family: MyriadPro;
