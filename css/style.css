@@ -1179,9 +1179,35 @@ button {
   .watch__img {
     -webkit-box-flex: 0;
     -ms-flex: 0 1 407px;
-    flex: 0 1 407px; }
+    flex: 0 1 407px;
+    -webkit-animation-name: watches;
+    animation-name: watches;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate; }
     .watch__img img {
       width: 100%; }
+
+@-webkit-keyframes watches {
+  0% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
+@keyframes watches {
+  0% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
   .watch__link {
     width: 296px;
     height: 48px;
@@ -1227,3 +1253,211 @@ button {
       -webkit-box-flex: 0;
       -ms-flex: 0 1 140px;
       flex: 0 1 140px; } }
+
+.top {
+  padding: 20px 0px 95px 0px; }
+  .top__title {
+    margin: 0px 0px 41px 0px;
+    font-family: MyriadPro;
+    font-size: 36px;
+    font-weight: 600;
+    color: #3cd072; }
+  .top__column {
+    margin: 25px 0px 25px 0px; }
+    .top__column:after {
+      display: block;
+      content: "";
+      background-color: #adadad;
+      width: 100%;
+      height: 0.5px;
+      margin: 19px 0px 0px 0px; }
+    .top__column:first-child:before {
+      display: block;
+      content: "";
+      background-color: #adadad;
+      width: 100%;
+      height: 0.5px;
+      margin: 0px 0px 19px 0px; }
+  .top__items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .top__image {
+    margin: 0px 23px; }
+  .top__main {
+    margin: 0px 45px 0px 0px;
+    width: 260px; }
+  .top__label {
+    font-family: MyriadPro;
+    font-size: 32px;
+    font-weight: 600;
+    color: #3cd072; }
+  .top__text {
+    margin: 15px 0px 13px 0px;
+    font-family: HelveticaNeue;
+    font-size: 24px;
+    font-weight: 300;
+    color: #000000; }
+  .top__sublabel {
+    font-family: HelveticaNeue;
+    font-size: 24px;
+    font-weight: 300;
+    color: #000000;
+    margin: 0px 0px 20px 0px; }
+  .top__numbers {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .top__vector {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 48px;
+    flex: 0 1 48px; }
+    .top__vector img {
+      max-width: 100%; }
+  .top__number {
+    margin: 0px 0px 0px 15px;
+    font-family: HelveticaNeue;
+    font-size: 68px;
+    font-weight: 100;
+    color: #000000; }
+  @media (max-width: 890px) {
+    .top__number {
+      font-size: 45px; } }
+  @media (max-width: 800px) {
+    .top__title {
+      text-align: center;
+      margin: 0px 0px 20px 0px; }
+    .top__items {
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+    .top__image {
+      margin: 0px 15px 10px 23px; }
+    .top__main {
+      margin: 0px 0px 0px 38px; }
+    .top__info {
+      margin: 30px 0px 0px 0px;
+      -webkit-box-flex: 0;
+      -ms-flex: 0 1 100%;
+      flex: 0 1 100%;
+      -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+      text-align: center; }
+    .top__sublabel {
+      margin: 0px 0px 10px 0px; }
+    .top__numbers {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+    .top__vector {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 1 38px;
+      flex: 0 1 38px; }
+    .top__number {
+      font-size: 35px;
+      margin: 0px 0px 0px 10px; } }
+  @media (max-width: 590px) {
+    .top {
+      padding: 20px 0px 30px 0px; }
+      .top__image {
+        display: none; } }
+  @media (max-width: 490px) {
+    .top__title {
+      font-size: 30px;
+      line-height: 32px; }
+    .top__column {
+      margin: 15px 0; }
+    .top__label {
+      font-size: 28px; }
+    .top__text {
+      font-size: 22px;
+      margin: 10px 0px; }
+    .top__info {
+      margin: 10px 0px 0px 0px; } }
+  @media (max-width: 425px) {
+    .top__photo {
+      text-align: center;
+      margin: 0px 0px 20px 0px; }
+    .top__main {
+      margin: 0px 0px 0px 0px;
+      -webkit-box-flex: 0;
+      -ms-flex: 0 1 100%;
+      flex: 0 1 100%; }
+    .top__info {
+      margin: 20px 0px 10px 0px; }
+    .top__label {
+      text-align: center; }
+    .top__text {
+      margin: 10px 0;
+      text-align: center; } }
+
+.rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 21px;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s; }
+  .rating_sending {
+    opacity: 0.2; }
+  .rating_set .rating__active,
+  .rating_set .rating__item {
+    cursor: pointer; }
+  .rating__body {
+    display: inline-block;
+    position: relative; }
+    .rating__body:before {
+      content: "★★★★★";
+      display: block; }
+  .rating__active {
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden; }
+    .rating__active:before {
+      content: "★★★★★";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      color: #ffd300; }
+  .rating__items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0; }
+  .rating__item {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    height: 100%;
+    opacity: 0; }
+  .rating__value {
+    display: none;
+    opacity: 0; }
+  .rating__out {
+    margin: 0px 0px 0px 12px;
+    display: inline-block;
+    font-family: HelveticaNeue;
+    font-size: 16px;
+    font-weight: 300;
+    color: #b3b3b3; }
+  @media (max-width: 425px) {
+    .rating {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; } }

@@ -1,3 +1,4 @@
+
 // СЛАЙДЕР (EASY)
 $(window).on('load resize', function () {
 	if ($(window).width() < 950) {
@@ -92,3 +93,4 @@ $(document).ready(function () {
 		]
 	});
 });
+
