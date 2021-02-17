@@ -1,0 +1,90 @@
+// <ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ> ============================================================================
+
+@import "nullstyle.scss";
+
+body {
+	font-size: 14px;
+	color: #000;
+	font-family: "MyriadPro";
+	font-weight: 400;
+	&.lock {
+		overflow: hidden;
+	}
+}
+
+a,
+button {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+// <ПОДКЛЮЧЕНИЕ ШРИФТОВ> ====================================================================================
+
+/** HelveticaNeue **/
+@font-face {
+	font-family: "HelveticaNeue";
+	src: url("../fonts/helveticaneuecyr-light.eot");
+	src: local("☺"), url("../fonts/helveticaneuecyr-light.woff") format("woff"),
+		url("../fonts/helveticaneuecyr-light.ttf") format("truetype"),
+		url("../fonts/helveticaneuecyr-light.svg") format("svg");
+	font-weight: 400;
+	font-style: normal;
+}
+
+/** MyriadPro **/
+@font-face {
+	font-family: "MyriadPro";
+	src: url("../fonts/MyriadPro-Regular.eot");
+	src: local("☺"), url("../fonts/MyriadPro-Regular.woff") format("woff"),
+		url("../fonts/MyriadPro-Regular.ttf") format("truetype"), url("../fonts/MyriadPro-Regular.svg") format("svg");
+	font-weight: 400;
+	font-style: normal;
+}
+
+/** MyriadPro **/
+@font-face {
+	font-family: "MyriadPro";
+	src: url("../fonts/MyriadPro-Semibold.eot");
+	src: local("☺"), url("../fonts/MyriadPro-Semibold.woff") format("woff"),
+		url("../fonts/MyriadPro-Semibold.ttf") format("truetype"), url("../fonts/MyriadPro-Semibold.svg") format("svg");
+	font-weight: 600;
+	font-style: normal;
+}
+
+/** SFCompactText **/
+@font-face {
+	font-family: "SFCompactText";
+	src: url("../fonts/SF-Compact-Text-Bold.eot");
+	src: local("☺"), url("../fonts/SF-Compact-Text-Bold.woff") format("woff"),
+		url("../fonts/SF-Compact-Text-Bold.ttf") format("truetype"),
+		url("../fonts/SF-Compact-Text-Bold.svg") format("svg");
+	font-weight: 600;
+	font-style: normal;
+}
+
+/** LucidaGrande **/
+@font-face {
+	font-family: "LucidaGrande";
+	src: url("../fonts/Lucida Grande.eot");
+	src: local("☺"), url("../fonts/Lucida Grande.woff") format("woff"),
+		url("../fonts/Lucida Grande.ttf") format("truetype"), url("../fonts/Lucida Grande.svg") format("svg");
+	font-weight: 400;
+	font-style: normal;
+}
+
+// <ОБОЛОЧКА, КОНТЕЙНЕР> ====================================================================================
+.wrapper {
+	width: 100%;
+	min-height: 100%;
+	overflow: hidden;
+}
+
+.container {
+	max-width: 1055px;
+	margin: 0px auto;
+	padding: 0 15px;
+}
+
+// <ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ> ===============================================================================
+@import "header.scss";
+@import "content.scss";
+@import "footer.scss";

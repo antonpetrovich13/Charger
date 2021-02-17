@@ -1121,3 +1121,159 @@
 		justify-content: center;
 	}
 }
+
+// <CONTACTS> ===================================================================
+
+.contacts {
+	padding: 95px 0px 72px 0px;
+	background: url("../img/contacts/bg.png") center no-repeat;
+	background-size: cover;
+	&__wrapper {
+		display: flex;
+		justify-content: center;
+		margin: 0px -52px;
+	}
+
+	&__column {
+		padding: 0px 52px;
+		flex: 0 1 50%;
+	}
+
+	&__title {
+		margin: 0px 0px 24px 0px;
+		font-family: MyriadPro;
+		font-size: 36px;
+		line-height: 32px;
+		font-weight: 600;
+		color: #000000;
+	}
+
+	&__form {
+	}
+
+	&__body {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__item {
+	}
+
+	&__items {
+		display: flex;
+		align-items: center;
+		&_2 {
+			margin: 24px 0px;
+		}
+	}
+
+	&__image {
+		transition: all 0.3s ease 0s;
+		&:hover {
+			opacity: 0.5;
+		}
+	}
+
+	&__link {
+		transition: all 0.3s ease 0s;
+		margin: 0px 0px 0px 19px;
+		font-family: MyriadPro;
+		font-size: 24px;
+		line-height: 24px;
+		font-weight: 600;
+		color: #ffffff;
+	}
+	@media (max-width: 1000px) {
+		padding: 70px 0;
+	}
+	@media (max-width: 850px) {
+		&__wrapper {
+			flex-wrap: wrap;
+		}
+		&__column {
+			flex: 0 1 100%;
+			text-align: center;
+			&_1 {
+				margin: 0px 0px 50px 0px;
+			}
+		}
+		&__items {
+			justify-content: center;
+			&_1 {
+				order: 2;
+				margin: 18px 0;
+			}
+			&_2 {
+				order: 3;
+				margin: 0px 0px 0px 0px;
+			}
+			&_3 {
+				order: 1;
+			}
+		}
+	}
+	@media (max-width: 768px) {
+		padding: 50px 0px;
+	}
+	@media (max-width: 500px) {
+		padding: 30px 0px;
+		&__title {
+			margin: 0px 0px 18px 0px;
+		}
+	}
+}
+.contacts__image:hover ~ .contacts__link {
+	opacity: 0.5;
+}
+.form {
+	&__body {
+	}
+
+	&__item {
+	}
+
+	&__input {
+		transition: all 0.5s ease 0s;
+		width: 456px;
+		height: 48px;
+		background-color: #ffffff;
+		padding: 0px 0px 0px 16px;
+		&_2 {
+			margin: 24px 0px;
+		}
+		&:focus {
+			box-shadow: 0 0 25px #000;
+		}
+		&._error {
+			box-shadow: 0 0 15px red;
+		}
+	}
+
+	&__textarea {
+		transition: all 0.5s ease 0s;
+		width: 456px;
+		height: 192px;
+		background-color: #ffffff;
+		padding: 18px 0px 0px 16px;
+		&:focus {
+			box-shadow: 0 0 15px #000;
+		}
+	}
+
+	&__button {
+		display: block;
+		width: 416px;
+	}
+	@media (max-width: 768px) {
+		&__input {
+			width: 100%;
+		}
+		&__textarea {
+			width: 100%;
+		}
+	}
+}
+.btn_bw {
+	margin: 24px 0px 0px 0px;
+	width: 216px;
+}
